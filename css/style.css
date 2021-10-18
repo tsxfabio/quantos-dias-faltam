@@ -10,6 +10,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh;
 }
 
 .menu__list {
@@ -21,4 +22,34 @@ header {
 
 .menu__list li {
     padding: 0 1rem;
+}
+
+/*  main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-termo {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.formulario-termo label {
+    margin: 1rem 0;
+}
+
+#data-termo {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#calcular {
+    width: 30%;
+    margin: 1rem auto;
+    text-align: center;
 }
