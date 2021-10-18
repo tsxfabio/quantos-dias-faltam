@@ -1,3 +1,24 @@
 body {
-    background-color: #f6f6f6
+    background-color: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.menu__list li {
+    padding: 0 1rem;
 }
