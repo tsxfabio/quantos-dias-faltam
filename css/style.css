@@ -43,7 +43,8 @@ main {
     margin: 1rem 0;
 }
 
-#data-termo {
+#data-inicial-termo,
+#data-final-termo {
     width: 60%;
     margin: 0 auto;
 }
