@@ -43,6 +43,11 @@ header {
     border-bottom: solid;
 }
 
+.menu-list a:active {
+    color: blue;
+    border-bottom: solid;
+}
+
 
 
 /*  main */
