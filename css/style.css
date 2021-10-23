@@ -54,7 +54,7 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -63,8 +63,11 @@ main {
 }
 
 main p {
-    display: flex;
-    justify-content: center;
+    text-align: justify;
+}
+
+.social-links a {
+    margin: 0 1rem;
 }
 
 .formulario-termo {
