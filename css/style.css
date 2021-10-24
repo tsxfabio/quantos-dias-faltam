@@ -3,6 +3,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
 /* header */
 
 header {
@@ -48,6 +53,20 @@ header {
     border-bottom: solid;
 }
 
+hr {
+    border: 1px;
+    height: 1px;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
 
 
 /*  main */
@@ -59,7 +78,6 @@ main {
     align-content: center;
     align-items: center;
     text-align: center;
-    margin: 2vh 30vh 0 30vh;
 }
 
 main p {
