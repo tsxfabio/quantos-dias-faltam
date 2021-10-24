@@ -54,9 +54,10 @@ header {
 }
 
 hr {
+    display: block;
     border: 0px;
-    height: 30px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(58, 87, 67, 0.75), rgba(0, 0, 0, 0));
 }
 
 
