@@ -104,3 +104,27 @@ main p {
     margin: 1rem auto;
     text-align: center;
 }
+
+/* Links Uteis - Main */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        links-uteis;
+    grid-template-columns: 33vh 33vh 33vh;
+    grid-template-rows: 20vh 20vh 20vh;
+}
+
+.grid-container ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*  Disposição Grid */
+
+.destaque-links {
+    grid-area: links-uteis;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: blue;
+}
