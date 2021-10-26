@@ -128,3 +128,8 @@ main p {
     grid-row: 1/3;
     background-color: blue;
 }
+
+.link-button-destaque {
+    width: 100%;
+    height: 100%;
+}
