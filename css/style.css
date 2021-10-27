@@ -120,7 +120,7 @@ main p {
     list-style: none;
 }
 
-/*  Disposição Grid */
+/* Links Úteis - Disposição Grid */
 
 .destaque-links {
     grid-area: links-uteis;
@@ -132,4 +132,20 @@ main p {
 .link-button-destaque {
     width: 100%;
     height: 100%;
+}
+
+/* Calculadora - Disposição Grid  */
+
+.formulario-termo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.container-data-inicial,
+.container-data-final {
+    display: flex;
+    flex-direction: column;
 }

@@ -22,7 +22,7 @@
             <nav class="menu-nav">
                 <ul class="menu-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Calculadora</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
                     <li><a href="#">Últimas Notícias</a></li>
                     <li><a href="links-uteis.html">Links Úteis</a></li>
                 </ul>
@@ -33,12 +33,16 @@
         <main>
             <form>
                 <div class="formulario-termo">
-                    <label for="data-inicial-termo">Informe a data de assinatura do Termo de Compromisso</label>
-                    <input type="date" id="data-inicial-termo" name="data-inicial-termo">
-                    <label for="data-final-termo">Informe a data do término do Termo de Compromisso ou Aditivo</label>
-                    <input type="date" id="data-final-termo" name="data-final-termo">
-                    <input type="submit" value="calcular" id="calcular">
+                    <div class="container-data-inicial">
+                        <label for="data-inicial-termo">Data de assinatura Termo de Compromisso</label>
+                        <input type="date" id="data-inicial-termo" name="data-inicial-termo">
+                    </div>
+                    <div class="container-data-final">
+                        <label for="data-final-termo">Data do término Termo de Compromisso</label>
+                        <input type="date" id="data-final-termo" name="data-final-termo">
+                    </div>
                 </div>
+                <input type="submit" value="calcular" id="calcular">
             </form>
         </main>
     </div>
