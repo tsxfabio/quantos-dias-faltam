@@ -21,14 +21,22 @@ const registraDatas = (evento) => {
 
 }
 
-/* const diffDatas = () => {
+const diffDatas = () => {
 
     const dataFinal = document.querySelector('[data-final]')
     valor = dataFinal.value
-    const prazo1 = moment(valor).subtract("30", "days") //Prazo para prorrogação do período de execução
-    prazoFinal = prazo1.value
-    console.log(prazoFinal)
-} */
+
+    const prazo1 = moment(valor).subtract(30, 'days') //Prazo para prorrogação do período de execução;
+    console.log(prazo1.format('DD/MM/YYYY'))
+
+    const prazo2 = moment(valor).subtract(60, 'days') //Prazo para solicitar readequação;
+    console.log(prazo2.format('DD/MM/YYYY'))
+
+    const prazo3 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
+    console.log(prazo3.format('DD/MM/YYYY'))
+
+
+}
 
 botaoSubmit.addEventListener('click', registraDatas)
-/* botaoSubmit.addEventListener('click', diffDatas) */
+botaoSubmit.addEventListener('click', diffDatas)
