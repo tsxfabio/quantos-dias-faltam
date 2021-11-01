@@ -32,8 +32,12 @@ const diffDatas = () => {
     const prazo2 = moment(valor).subtract(60, 'days') //Prazo para solicitar readequação;
     console.log(prazo2.format('DD/MM/YYYY'))
 
-    const prazo3 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
+    const prazo3 = moment(valor).add(60, 'days') //Prazo para entregar a Prestação de Contas Final;
     console.log(prazo3.format('DD/MM/YYYY'))
+
+    const prazo4 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
+    console.log(prazo4.format('DD/MM/YYYY'))
+
 
 
 }
