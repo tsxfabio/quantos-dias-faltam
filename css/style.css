@@ -149,3 +149,8 @@ main p {
     display: flex;
     flex-direction: column;
 }
+
+.prazos-conteudo {
+    list-style: none;
+    text-align: center;
+}
