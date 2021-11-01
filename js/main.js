@@ -38,8 +38,18 @@ const diffDatas = () => {
     const prazo4 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
     console.log(prazo4.format('DD/MM/YYYY'))
 
+}
 
+const prazosList = () => {
 
+    const prazos = document.createElement('li')
+
+    prazos.classList.add('prazos-conteudo')
+
+    const conteudo = `<p class="prazos-conteudo">Sua data limite para solicitar prorrogação do Período de Execução é ${prazo1}.</p>
+    <p class="prazos-conteudo"> Sua data limite para solicitar Readequação do Plano de Trabalho é ${prazo2}.</p>
+    <p class="prazos-conteudo"> Sua data limite para entregar a Prestação de Contas Final é ${prazo3}.</p>
+    <p class="prazos-conteudo"> Sua data limite para solicitar Transferência do Saldo Remanescente é ${prazo4}.</p>`
 }
 
 botaoSubmit.addEventListener('click', registraDatas)
