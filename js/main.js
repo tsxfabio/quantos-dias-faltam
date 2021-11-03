@@ -38,9 +38,8 @@ const diffDatas = () => {
     const prazo4 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
     const prazo4format = prazo4.format('DD/MM/YYYY')
 
-    /* }
+    // Necessário arrumar função posteriormente
 
-    const prazosList = (diffDatas) => { */
     const prazos = document.createElement('li')
 
     prazos.classList.add('prazos-conteudo')
