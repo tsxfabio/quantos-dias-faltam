@@ -6,19 +6,6 @@ const botaoSubmit = document.querySelector('[data-calcular]')
 const registraDatas = (evento) => {
 
     evento.preventDefault()
-
-    const dataInicial = document.querySelector('[data-inicial]')
-    const valor1 = dataInicial.value
-
-    const dataFinal = document.querySelector('[data-final]')
-    const valor2 = dataFinal.value
-
-    const dataInicialFormata = moment(valor1).format('DD/MM/YYYY')
-    const dataFinalFormatada = moment(valor2).format('DD/MM/YYYY')
-
-
-    console.log('As datas inseridas foram' + ' ' + dataInicialFormata + ' e ' + dataFinalFormatada)
-
 }
 
 const diffDatas = () => {
@@ -54,9 +41,8 @@ const diffDatas = () => {
     const listaPrazos = document.querySelector('[data-prazos-lista]')
     listaPrazos.appendChild(prazos)
 
-    return prazos
 }
 
 botaoSubmit.addEventListener('click', registraDatas)
 botaoSubmit.addEventListener('click', diffDatas)
-botaoSubmit.addEventListener('click', prazosList)
+/* botaoSubmit.addEventListener('click', prazosList) */
