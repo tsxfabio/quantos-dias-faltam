@@ -8,7 +8,7 @@ const registraDatas = (evento) => {
     evento.preventDefault()
 }
 
-const diffDatas = () => {
+export const diffDatas = () => {
 
     const dataFinal = document.querySelector('[data-final]')
     valor = dataFinal.value
@@ -25,7 +25,13 @@ const diffDatas = () => {
     const prazo4 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
     const prazo4format = prazo4.format('DD/MM/YYYY')
 
-    // Necessário arrumar função posteriormente
+    return
+
+}
+
+const printDatas = () => {
+
+    diffDatas() //entender o pq não importa as informações
 
     const prazos = document.createElement('li')
 
@@ -43,6 +49,8 @@ const diffDatas = () => {
 
 }
 
+// Necessário arrumar função posteriormente
+
 botaoSubmit.addEventListener('click', registraDatas)
-botaoSubmit.addEventListener('click', diffDatas)
+botaoSubmit.addEventListener('click', printDatas)
 /* botaoSubmit.addEventListener('click', prazosList) */
