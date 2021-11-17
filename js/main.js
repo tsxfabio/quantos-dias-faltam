@@ -25,28 +25,25 @@ export const diffDatas = () => {
     const prazo4 = moment(valor).add(120, 'days') //Prazo para solicitar transferência de Saldo Remanescente;
     const prazo4format = prazo4.format('DD/MM/YYYY')
 
-    return
+    const printDatas = () => {
 
-}
+        diffDatas() //entender o pq não importa as informações
 
-const printDatas = () => {
+        const prazos = document.createElement('li')
 
-    diffDatas() //entender o pq não importa as informações
+        prazos.classList.add('prazos-conteudo')
 
-    const prazos = document.createElement('li')
-
-    prazos.classList.add('prazos-conteudo')
-
-    const conteudo = `<p class="prazos-conteudo">Sua data limite para solicitar prorrogação do Período de Execução é ${prazo1format}.</p>
+        const conteudo = `<p class="prazos-conteudo">Sua data limite para solicitar prorrogação do Período de Execução é ${prazo1format}.</p>
     <p class="prazos-conteudo"> Sua data limite para solicitar Readequação do Plano de Trabalho é ${prazo2format}.</p>
     <p class="prazos-conteudo"> Sua data limite para entregar a Prestação de Contas Final é ${prazo3format}.</p>
     <p class="prazos-conteudo"> Sua data limite para solicitar Transferência do Saldo Remanescente é ${prazo4format}.</p>`
 
-    prazos.innerHTML = conteudo
+        prazos.innerHTML = conteudo
 
-    const listaPrazos = document.querySelector('[data-prazos-lista]')
-    listaPrazos.appendChild(prazos)
+        const listaPrazos = document.querySelector('[data-prazos-lista]')
+        listaPrazos.appendChild(prazos)
 
+    }
 }
 
 // Necessário arrumar função posteriormente
